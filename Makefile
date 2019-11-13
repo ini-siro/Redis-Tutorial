@@ -1,3 +1,11 @@
 .PHONY: install
 install:
-	echo "hello"
+	brew install Redis
+
+.PHONY: server
+install:
+	redis-server
+
+.PHONY: client
+install:
+	redis-cli
